@@ -156,10 +156,9 @@ Happy coding! 🙂
 
 ## Frequently Asked Questions (FAQs)
 
-- How do I handle errors in Express.js?
-    
-    
-    You can handle errors in Express.js using the `res.status(code).send("message")` method. 
+<details>
+<summary>How do I handle errors in Express.js?</summary>
+You can handle errors in Express.js using the `res.status(code).send("message")` method. 
     
     For example:
     
@@ -171,10 +170,14 @@ Happy coding! 🙂
       return res.status(404).send("To Do not found");
     }
     ```
+
+</details>
     
-- How do I generate unique IDs for my to-dos?
-    
-    As we’re working with a local array to store our collections of to-dos, we could simply check the length of the array and increment the ID by 1 (`array.length +1` ).
+
+
+    <details>
+<summary>How do I generate unique IDs for my to-dos?</summary>
+As we’re working with a local array to store our collections of to-dos, we could simply check the length of the array and increment the ID by 1 (`array.length +1` ).
     
     This works but it’s not a foolproof solution. If we create to-dos, delete existing ones, and then create additional to-dos, we may end up introducing items with duplicate IDs (using the logic above).
     
@@ -194,3 +197,4 @@ Happy coding! 🙂
         status
       };
     ```
+</details>
