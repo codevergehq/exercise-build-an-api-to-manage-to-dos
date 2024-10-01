@@ -38,7 +38,7 @@ Here’s an example of a sample to-do:
 
 ## Getting Started
 
-1. [Fork this repository](https://github.com/code-verge/exercise-valentinos-express-site/)
+1. Fork this repository
 2. Clone the repository to your computer
 3. Open the repository in VS Code
 4. Follow instructions
@@ -158,6 +158,7 @@ Happy coding! 🙂
 
 <details>
 <summary>How do I handle errors in Express.js?</summary>
+
 You can handle errors in Express.js using the `res.status(code).send("message")` method. 
     
     For example:
@@ -177,6 +178,7 @@ You can handle errors in Express.js using the `res.status(code).send("message")`
 
 <details>
 <summary>How do I generate unique IDs for my to-dos?</summary>
+
 As we’re working with a local array to store our collections of to-dos, we could simply check the length of the array and increment the ID by 1 (`array.length +1` ).
     
     This works but it’s not a foolproof solution. If we create to-dos, delete existing ones, and then create additional to-dos, we may end up introducing items with duplicate IDs (using the logic above).
