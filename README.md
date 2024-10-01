@@ -175,7 +175,7 @@ You can handle errors in Express.js using the `res.status(code).send("message")`
     
 
 
-    <details>
+<details>
 <summary>How do I generate unique IDs for my to-dos?</summary>
 As we’re working with a local array to store our collections of to-dos, we could simply check the length of the array and increment the ID by 1 (`array.length +1` ).
     
