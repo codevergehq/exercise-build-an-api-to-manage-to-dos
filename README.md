@@ -203,14 +203,19 @@ Test your API using Bruno.
 
 Create a new collection with the following requests:
 
-	1.	Get all todos — ⁠`GET http://localhost:3000/todos`
-	2.	Search todos
+1. Get all todos — ⁠`GET http://localhost:3000/todos`
+2. Search todos
 
-`GET http://localhost:3000/todos?done=false
+
+``` jsx
+GET http://localhost:3000/todos?done=false
 GET http://localhost:3000/todos?category=shopping
 GET http://localhost:3000/todos?name=groceries`
+```
+
 
 3. Create todo
+
 
 ``` jsx
 POST http://localhost:3000/todos
@@ -223,9 +228,11 @@ Content-Type: application/json
 }
 ```
 
+
 4. Get todo by ID — ⁠`GET http://localhost:3000/todos/:id`
 
 5. Update todo
+
 
 ``` jsx
 PUT http://localhost:3000/todos/:id
@@ -237,6 +244,7 @@ Content-Type: application/json
   "done": true
 }
 ```
+
 
 6. 	Delete todo — ⁠`DELETE http://localhost:3000/todos/:id`
 
